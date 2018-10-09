@@ -1,0 +1,125 @@
+@import  'style/font.scss';
+
+
+@font-face{
+  font-family: 'Cruise';
+  src: url('./assets/fontIcons/fonts/cruise.woff') format('woff'),
+      url('./assets/fontIcons/fonts/cruise.ttf') format('truetype'),
+      url('./assets/fontIcons/fonts/cruise.svg#webfont34M5alKg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  height: 100%;
+}
+
+#app {
+  font-family: 'Cruise', Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  color: #2d4054;
+  // margin-top: 60px;
+  margin: 0;
+  height: 100%;
+  font-size: 14px;
+}
+
+.main{
+  height: 100%;
+  .main-container{
+    height: 100%;
+    padding-top: 60px;
+    background-color: #e1e4e6;
+  }
+}
+
+.flex{
+  display: flex;
+}
+
+.align-center{
+  align-items: center;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  // display: inline-block;
+  // margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+.content-container{
+  // padding-top: 60px;
+  height: inherit;
+  width: 100%;
+  text-align: left;
+  // margin-right: 10%;
+  padding-right: 10%;
+  overflow: auto;
+  // background-color: #fff;
+}
+
+.btn{
+  display: inline-block;
+  padding: 5px 7px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: none;
+  background-color: #e1e4e6;
+  transition: all .3s;
+
+  &:active{
+    box-shadow: .05em .1em .2em rgba(0,0,0,.6) inset;
+    border-color: rgba(0,0,0,.3);
+    background: #bbb;
+  }
+
+  &:focus{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+  }
+}
+
+.badge{
+  background-color: #e6e6e6;
+  padding: 1px 7px;
+  font-size: 14px;
+
+  &.success{
+    background-color: #7fbc39;
+    color: #fff;
+  }
+
+  &.warning{
+    background-color: #ff9a2a;
+    color: #fff;
+  }
+}
